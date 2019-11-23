@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "树与图课程设计", "树与图课程设计\树与图课程设计.vcxproj", "{9D0269B1-D218-4610-8678-8C7B96A9AAA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Debug|x64.ActiveCfg = Debug|x64
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Debug|x64.Build.0 = Debug|x64
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Debug|x86.Build.0 = Debug|Win32
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Release|x64.ActiveCfg = Release|x64
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Release|x64.Build.0 = Release|x64
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Release|x86.ActiveCfg = Release|Win32
+		{9D0269B1-D218-4610-8678-8C7B96A9AAA1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55291F1-1627-4386-8107-16C1AF5CC87F}
+	EndGlobalSection
+EndGlobal
