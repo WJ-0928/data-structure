@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="实验.cpp" />
+    <ClCompile Include="数据结构试题.cpp" />
     <ClCompile Include="线性结构设计题.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
