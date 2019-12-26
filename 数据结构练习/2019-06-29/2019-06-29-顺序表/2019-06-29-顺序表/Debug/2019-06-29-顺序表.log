@@ -1,0 +1,17 @@
+﻿  Main.c
+  SeqList.c
+  SeqList自己.c
+  正在生成代码...
+SeqList自己.obj : error LNK2005: _SeqListDestroy 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListErase 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListFind 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListInit 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListInsert 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListPopBack 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListPopFront 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListPrint 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListPushBack 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListPushFront 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListRemove 已经在 SeqList.obj 中定义
+SeqList自己.obj : error LNK2005: _SeqListRemoveAll 已经在 SeqList.obj 中定义
+C:\Users\ADMIN\Documents\CPP\2019-06-29\2019-06-29-顺序表\Debug\2019-06-29-顺序表.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
