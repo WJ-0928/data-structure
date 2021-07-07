@@ -1,7 +1,7 @@
-#include "Seqlist.h"
-
+#include"SList.h"
+#include"DHCList.h"
 int main()
 {
-	TestSeqList();
+	TestDHList();
 	return 0;
 }
