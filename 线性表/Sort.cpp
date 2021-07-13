@@ -412,11 +412,47 @@ void MergeSortNor(int* array, int size)
 	}
 	free(temp);
 }
-
+void CountSort(int*  array, int size)
+{
+	//1、统计数据的范围，并不是必须的（如果用户告诉数据范围，就不需要来统计范围）
+	int min = array[0];
+	int max = array[0];
+	for (int i = 1; i < size; ++i)
+	{
+		if (array[i] < min)
+			min = array[i];
+		if (array[i] > max)
+			max = array[i];
+	}
+	//2、申请计数空间
+	int range = max - min + 1;
+	int* arraycount = (int*)malloc(range * sizeof(int));
+	if (NULL == range)
+	{
+		assert(0);
+		return;
+	}
+	memset(arraycount, 0, range * sizeof(int));
+	//3、统计每个元素出现的次数
+	for (int i = 0; i < size; ++i)
+	{
+		arraycount[array[i] - min]++;
+	}
+	//4、对数据进行回收
+	int index = 0;
+	for (int i = 0; i < range; ++i)
+	{
+		while (arraycount[i]--)
+		{
+			array[index++] = i + min;
+		}
+	}
+	free(arraycount);
+}
 
 void TestSort()
 {
-	int array[] = { 4,1,7,6,3,2,5,8,0,9 };
+	int array[] = { 4,1,7,1,3,4,6,2,6,3,2,5,8,0,9 };
 	PrintArray(array, sizeof(array) / sizeof(array[0]));
 	/*SelectSortOp(array, sizeof(array) / sizeof(array[0]));
 	PrintArray(array, sizeof(array) / sizeof(array[0]));
@@ -427,6 +463,7 @@ void TestSort()
 	//QuickSort(array, sizeof(array) / sizeof(array[0]));
 	//QuickSortNor(array, sizeof(array) / sizeof(array[0]));
 	//MergeSort(array, sizeof(array) / sizeof(array[0]));
-	MergeSortNor(array, sizeof(array) / sizeof(array[0]));
+	/*MergeSortNor(array, sizeof(array) / sizeof(array[0]));*/
+	CountSort(array, sizeof(array) / sizeof(array[0]));
 	PrintArray(array, sizeof(array) / sizeof(array[0]));
 }
